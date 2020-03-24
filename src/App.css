@@ -1,0 +1,229 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-body {
+  background-color: #282c34;
+  min-height: 90vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; */
+  display: flex;
+}
+
+.App-header {
+  background-color: #121316;
+  min-height: 10vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  text-align: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header-title {
+  padding: 4vmin 1rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App .Stage:last-child{
+  margin-right: 10px;
+}
+
+.Stage{
+  height: 85vh;
+  background-color: #3d707a;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 2px;
+  width: fit-content;
+}
+
+.Stage-columns{
+  height: 50vh;
+  width: fit-content;
+  display: flex;
+}
+
+.Stage-columns .Column:last-child{
+  margin-right: 10px;
+}
+
+.Stage-title{
+  color: white;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.Column{
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 360px;
+  background-color: #857e83;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+
+.Column-title{
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Column-cards{
+  padding: 1vmin 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 69vh;
+  margin-bottom: 5px;
+}
+
+.Column-cards .Card-draggable:nth-last-child(2){
+  margin-bottom: 10px;
+}
+
+.Column-cards .Card-draggable{
+  margin-top: 10px;
+}
+
+.Column-add-icon{
+  color: #d4d4d4;
+  font-size: 24px;
+}
+
+.Card{
+  height: auto;
+  width: 100%;
+  background-color: #d4d4d4;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.Card-title{
+  padding-top: 10px;
+  display: flex;
+  padding-bottom: 10px;
+  transition: .2s all ease;
+}
+
+.Card-title-description{
+  padding-top: 10px;
+  margin-left: 15px;
+  color:#444444
+}
+
+.Card-title-icon{
+  margin-right: 10px;
+  color: #696666;
+}
+
+.Card-title-expand{
+  background-color: #d4d4d4;
+  color: #d4d4d4;
+  transition: .2s all ease;
+}
+
+.Card-title:hover {
+  padding-top: 10px;
+  display: flex;
+  padding-bottom: 10px;
+  background-color:#e8e8e8;
+  border-top-right-radius: 3px;
+  transition: .2s all ease;
+}
+
+.Card-details{
+  color: #444444;
+  background-color: #e8e8e8;
+  padding-top: 10px;
+  font-size: 15px;
+  padding-bottom: 5px;
+  opacity: 1;
+  transition: .2s all ease;
+}
+
+.Card-details-hidden{
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: .2s all ease;
+}
+
+.Card-details-description{
+  margin-left: 15px;
+}
+
+
+
+.Card-footer{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.Card-footer-buttons{
+  color: #d4d4d4;
+  font-size: 23px;
+  margin-top: 10px;
+  width: 55%;
+  transition: .2s all ease;
+}
+
+.Card-footer:hover .Card-footer-buttons{
+  color:#696666;
+  transition: .2s all ease;
+}
+
+.Card-footer-icon{
+  margin-left: 10px;
+}
+
+.Card-priority{
+  font-size: 12px;
+  margin-left: 15px;
+  margin-right: 50px;
+  margin-bottom: 3px;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+  background-color: #e2e2e2;
+  width: 33%;
+  border-radius: 6px;
+  color: white;
+}
+
+.Card-priority-completion{
+  height: 5px;
+  /* background-color: #5cac2a;
+  border: 2px solid #5cac2a; */
+  border-radius: 6px;
+  /* width: 100px; */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
