@@ -30,7 +30,7 @@ class Card extends Component{
             borderLeft: "6px solid "+ this.props.priority
         }
 
-        var detailStyle, expandStyle;
+        var detailStyle;
 
         if(this.state.descHidden){
             detailStyle = "Card-details"
