@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Stage from './Stage.jsx'
 import {DragDropContext, Droppable} from 'react-beautiful-dnd';
 import Column from './Column.jsx'
 
