@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   getTasks(){
-    fetch('https://9789148e.ngrok.io/get-cards', {
+    fetch('https://2135d53a.ngrok.io/get-cards', {
     method: 'GET',
     headers: { "Content-Type": "application/json" },
     mode: 'cors'
